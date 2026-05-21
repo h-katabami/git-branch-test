@@ -1,0 +1,58 @@
+{
+  "name": "aic-everlife-order",
+  "version": "0.1.0",
+  "homepage": "/everlife-order",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "aws-amplify": "^5.0.2",
+    "chart.js": "^4.2.1",
+    "encoding-japanese": "^2.0.0",
+    "exceljs": "^4.3.0",
+    "libphonenumber-js": "^1.11.7",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.39.4",
+    "react-player": "^2.11.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "react-window": "^1.8.8",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy:s3": "node scripts/deploy.js s3",
+    "invalidate:cf": "node scripts/deploy.js invalidate",
+    "deploy": "yarn build && yarn deploy:s3 && yarn invalidate:cf",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
