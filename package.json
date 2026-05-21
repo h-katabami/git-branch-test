@@ -1,7 +1,7 @@
 {
-  "name": "aic-everlife-order",
+  "name": "aic-branch-test",
   "version": "0.1.0",
-  "homepage": "/everlife-order",
+  "homepage": "/branch-test",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
